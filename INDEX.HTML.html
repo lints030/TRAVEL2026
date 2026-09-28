@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italia‧Switzerland‧France 2026 義瑞法之旅✈️</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#F7F3E9',
+                            200: '#EFE8D8',
+                            300: '#E4D8C1',
+                            400: '#CDBCA0',
+                            800: '#5C5242',
+                            900: '#3D362C',
+                        },
+                        terracotta: {
+                            DEFAULT: '#C86D51',
+                            light: '#E28A6F',
+                            dark: '#A4533C'
+                        },
+                        olive: {
+                            DEFAULT: '#7B886B',
+                            light: '#A3B19B',
+                            dark: '#58644A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #F7F3E9;
+            color: #3D362C;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .cream-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(228, 216, 193, 0.6);
+            box-shadow: 0 4px 20px -2px rgba(92, 82, 66, 0.06);
+        }
+        .ticket-card {
+            background: linear-gradient(135deg, #FFFDF9 0%, #F5EFE6 100%);
+            border: 1px solid #E4D8C1;
+            box-shadow: 0 10px 25px -5px rgba(92, 82, 66, 0.08);
+        }
+        /* Hide scrollbars for clean UI */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="h-full flex flex-col justify-between selection:bg-terracotta selection:text-white">
+
+    <!-- Top Header -->
+    <header class="sticky top-0 z-40 bg-[#F7F3E9]/90 backdrop-blur-md border-b border-cream-200 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <span class="text-xl">✈️</span>
+            <div>
+                <h1 class="text-sm font-bold tracking-wide text-cream-900 leading-tight">2026 義瑞法之旅✈️</h1>
+                <p class="text-[10px] text-cream-800 opacity-80">Italia · Switzerland · France</p>
+            </div>
+        </div>
+        <button onclick="openAccommodations()" class="bg-white hover:bg-cream-100 border border-cream-300 text-cream-900 text-xs px-3 py-1.5 rounded-full shadow-sm flex items-center space-x-1.5 transition active:scale-95">
+            <i class="fa-solid fa-hotel text-terracotta"></i>
+            <span class="font-medium">住宿總覽</span>
+        </button>
+    </header>
+
+    <!-- Main View Container -->
+    <main class="flex-1 overflow-y-auto pb-24 max-w-lg mx-auto w-full px-3 pt-3 sm:px-4">
+        
+        <!-- ================= TAB 1: PLAN (行程表) ================= -->
+        <div id="tab-plan" class="tab-content space-y-4">
+            
+            <!-- Flight Ticket Card with detailed layover segments -->
+            <div class="ticket-card rounded-2xl p-4 sm:p-5 relative overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 text-cream-300/30 text-9xl pointer-events-none">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-terracotta text-white text-[10px] px-2 py-0.5 rounded-full font-bold">已購買</span>
+                        <span class="text-xs font-bold text-cream-900">航班機票</span>
+                    </div>
+                    <span class="text-xs font-semibold text-terracotta">EMIRATES 阿聯酋航空</span>
+                </div>
+                
+                <!-- Flight segment 1: Outbound TPE -> DXB -> FCO -->
+                <div class="bg-white/90 backdrop-blur rounded-xl p-3.5 mb-3 border border-cream-200 shadow-sm">
+                    <div class="flex justify-between text-xs text-cream-800 mb-2 border-b border-cream-100 pb-1.5">
+                        <span class="font-bold text-cream-900 flex items-center"><i class="fa-solid fa-plane-departure text-terracotta mr-1.5"></i> 去程：09/29 </span>
+                        <span class="text-olive font-medium">總時長 17h 15m</span>
+                    </div>
+
+                    <!-- Leg 1: TPE -> DXB -->
+                    <div class="flex justify-between items-center my-2 text-xs">
+                        <div>
+                            <div class="text-sm font-bold text-cream-900">TPE 台北</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">00:30</div>
+                        </div>
+                        <div class="flex-1 px-2 text-center">
+                            <div class="text-[10px] text-cream-800">EK0387 (8h 45m)</div>
+                            <div class="w-full border-t border-dashed border-cream-400 my-1 relative">
+                                <i class="fa-solid fa-plane text-[9px] text-terracotta absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-1"></i>
+                            </div>
+                            <div class="text-[9px] text-olive font-medium">杜拜 DXB 轉機 (3h 55m)</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-bold text-cream-900">DXB 杜拜</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">05:15</div>
+                        </div>
+                    </div>
+
+                    <!-- Leg 2: DXB -> FCO -->
+                    <div class="flex justify-between items-center mt-3 pt-2 border-t border-dashed border-cream-200 text-xs">
+                        <div>
+                            <div class="text-sm font-bold text-cream-900">DXB 杜拜</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">09:10</div>
+                        </div>
+                        <div class="flex-1 px-2 text-center">
+                            <div class="text-[10px] text-cream-800">EK0097 (6h 15m)</div>
+                            <div class="w-full border-t border-dashed border-cream-400 my-1 relative">
+                                <i class="fa-solid fa-plane text-[9px] text-terracotta absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-1"></i>
+                            </div>
+                            <div class="text-[9px] text-olive font-medium">直達羅馬 FCO</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-bold text-cream-900">FCO 羅馬</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">13:25</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flight segment 2: Inbound FCO -> DXB -> TPE -->
+                <div class="bg-white/90 backdrop-blur rounded-xl p-3.5 border border-cream-200 shadow-sm">
+                    <div class="flex justify-between text-xs text-cream-800 mb-2 border-b border-cream-100 pb-1.5">
+                        <span class="font-bold text-cream-900 flex items-center"><i class="fa-solid fa-plane-arrival text-terracotta mr-1.5"></i> 回程：10/22 - 10/23</span>
+                        <span class="text-olive font-medium">總時長 15h 30m</span>
+                    </div>
+
+                    <!-- Leg 3: FCO -> DXB -->
+                    <div class="flex justify-between items-center my-2 text-xs">
+                        <div>
+                            <div class="text-sm font-bold text-cream-900">FCO 羅馬</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">22:10</div>
+                        </div>
+                        <div class="flex-1 px-2 text-center">
+                            <div class="text-[10px] text-cream-800">EK0096 (5h 40m)</div>
+                            <div class="w-full border-t border-dashed border-cream-400 my-1 relative">
+                                <i class="fa-solid fa-plane text-[9px] text-terracotta absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-1 fa-rotate-180"></i>
+                            </div>
+                            <div class="text-[9px] text-olive font-medium">杜拜 DXB 轉機 (3h 15m)</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-bold text-cream-900">DXB 杜拜</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">05:50 (+1)</div>
+                        </div>
+                    </div>
+
+                    <!-- Leg 4: DXB -> TPE -->
+                    <div class="flex justify-between items-center mt-3 pt-2 border-t border-dashed border-cream-200 text-xs">
+                        <div>
+                            <div class="text-sm font-bold text-cream-900">DXB 杜拜</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">09:05</div>
+                        </div>
+                        <div class="flex-1 px-2 text-center">
+                            <div class="text-[10px] text-cream-800">EK0386 (8h 35m)</div>
+                            <div class="w-full border-t border-dashed border-cream-400 my-1 relative">
+                                <i class="fa-solid fa-plane text-[9px] text-terracotta absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-1 fa-rotate-180"></i>
+                            </div>
+                            <div class="text-[9px] text-olive font-medium">直達台北 TPE</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-bold text-cream-900">TPE 台北</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">21:40</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date Selector Pill Carousel -->
+            <div class="flex space-x-2 overflow-x-auto no-scrollbar py-1" id="date-selector">
+                <!-- Javascript will inject date tabs here -->
+            </div>
+
+            <!-- Daily Itinerary Container -->
+            <div id="daily-itinerary-container" class="space-y-4">
+                <!-- Javascript will render active day card here -->
+            </div>
+        </div>
+
+        <!-- ================= TAB 2: GUIDE (深度導覽) ================= -->
+        <div id="tab-guide" class="tab-content hidden space-y-4">
+            <div class="cream-card rounded-2xl p-4">
+                <h2 class="text-base font-bold text-cream-900 mb-1 flex items-center">
+                    <i class="fa-solid fa-book-open text-terracotta mr-2"></i> 歐亞深度文化導覽
+                </h2>
+                <p class="text-xs text-cream-800 leading-relaxed">
+                    精選義大利、瑞士與法國 39 個代表性景點。點擊下方景點卡片即可深入探索歷史背景、建築美學與趣味冷知識。
+                </p>
+            </div>
+
+            <!-- Search Filter for Guides -->
+            <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-cream-400">
+                    <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                </span>
+                <input type="text" id="guide-search" oninput="filterGuides(this.value)" placeholder="搜尋景點名稱、城市..." class="w-full pl-9 pr-4 py-2 bg-white border border-cream-300 rounded-xl text-xs text-cream-900 focus:outline-none focus:border-terracotta shadow-sm">
+            </div>
+
+            <!-- Guide Cards List -->
+            <div id="guide-list-container" class="space-y-3">
+                <!-- Javascript injects guides -->
+            </div>
+        </div>
+
+        <!-- ================= TAB 3: TRANSPORT (交通) ================= -->
+        <div id="tab-transport" class="tab-content hidden space-y-4">
+            <div class="cream-card rounded-2xl p-4">
+                <h2 class="text-base font-bold text-cream-900 mb-1 flex items-center">
+                    <i class="fa-solid fa-train-subway text-terracotta mr-2"></i> 跨國鐵路與大眾運輸
+                </h2>
+                <p class="text-xs text-cream-800 leading-relaxed">
+                    完整收錄 9/29 至 10/22 各段火車 (Trenitalia, Italo, 瑞士IR)、巴士 (Flixbus) 及市區地鐵時刻與資訊。
+                </p>
+            </div>
+
+            <!-- Transport Timeline Container -->
+            <div id="transport-timeline-container" class="space-y-3">
+                <!-- Javascript injects transport items -->
+            </div>
+        </div>
+
+        <!-- ================= TAB 4: LISTS (清單) ================= -->
+        <div id="tab-lists" class="tab-content hidden space-y-4">
+            <div class="cream-card rounded-2xl p-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-base font-bold text-cream-900 mb-0.5 flex items-center">
+                            <i class="fa-solid fa-clipboard-check text-terracotta mr-2"></i> 行李與行前準備 CheckList
+                        </h2>
+                        <p class="text-[11px] text-cream-800">勾選狀態會自動儲存於瀏覽器中，出發前不遺漏。</p>
+                    </div>
+                    <button onclick="resetChecklist()" class="text-[10px] bg-cream-200 hover:bg-cream-300 text-cream-900 px-2 py-1 rounded-lg transition font-medium">重設勾選</button>
+                </div>
+            </div>
+
+            <!-- Checklist Categories Container -->
+            <div id="checklist-container" class="space-y-4">
+                <!-- Javascript injects checklist -->
+            </div>
+        </div>
+
+        <!-- ================= TAB 5: INFO (資訊) ================= -->
+        <div id="tab-info" class="tab-content hidden space-y-4">
+            <div class="cream-card rounded-2xl p-4">
+                <h2 class="text-base font-bold text-cream-900 mb-1 flex items-center">
+                    <i class="fa-solid fa-circle-info text-terracotta mr-2"></i> 實用旅遊資訊與應急專區
+                </h2>
+                <p class="text-xs text-cream-800">包含各國天氣連結、駐外館處緊急聯絡方式及歐洲旅遊須知。</p>
+            </div>
+
+            <!-- Weather Quick Links -->
+            <div class="cream-card rounded-2xl p-4 space-y-3">
+                <h3 class="text-xs font-bold text-cream-900 uppercase tracking-wider flex items-center">
+                    <i class="fa-solid fa-cloud-sun text-olive mr-2"></i> 各國天氣預報快速查詢
+                </h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <a href="https://www.meteoam.it/" target="_blank" class="bg-cream-100 hover:bg-cream-200 p-2.5 rounded-xl text-center transition border border-cream-300">
+                        <div class="text-lg mb-1">🇮🇹</div>
+                        <div class="text-[11px] font-bold text-cream-900">義大利氣象</div>
+                        <div class="text-[9px] text-cream-800 opacity-70">MeteoIt</div>
+                    </a>
+                    <a href="https://www.meteoswiss.admin.ch/" target="_blank" class="bg-cream-100 hover:bg-cream-200 p-2.5 rounded-xl text-center transition border border-cream-300">
+                        <div class="text-lg mb-1">🇨🇭</div>
+                        <div class="text-[11px] font-bold text-cream-900">瑞士氣象</div>
+                        <div class="text-[9px] text-cream-800 opacity-70">MeteoSwiss</div>
+                    </a>
+                    <a href="https://meteofrance.com/" target="_blank" class="bg-cream-100 hover:bg-cream-200 p-2.5 rounded-xl text-center transition border border-cream-300">
+                        <div class="text-lg mb-1">🇫🇷</div>
+                        <div class="text-[11px] font-bold text-cream-900">法國氣象</div>
+                        <div class="text-[9px] text-cream-800 opacity-70">MeteoFrance</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Emergency Contacts -->
+            <div class="cream-card rounded-2xl p-4 space-y-3">
+                <h3 class="text-xs font-bold text-cream-900 uppercase tracking-wider flex items-center">
+                    <i class="fa-solid fa-phone-volume text-terracotta mr-2"></i> 緊急求助與駐外代表處
+                </h3>
+                <div class="space-y-2 text-xs">
+                    <div class="bg-cream-50 p-3 rounded-xl border border-cream-200 flex justify-between items-center">
+                        <div>
+                            <div class="font-bold text-cream-900">歐盟通用緊急求助電話</div>
+                            <div class="text-[10px] text-cream-800">報警 / 醫療救護 / 火警</div>
+                        </div>
+                        <a href="tel:112" class="bg-terracotta text-white font-bold px-3 py-1.5 rounded-lg text-xs shadow-sm hover:bg-terracotta-dark">112</a>
+                    </div>
+                    <div class="bg-cream-50 p-3 rounded-xl border border-cream-200">
+                        <div class="font-bold text-cream-900 mb-1">駐義大利代表處 (台北代表處在羅馬)</div>
+                        <div class="text-[11px] text-cream-800 mb-1">急難救助電話：+39-335-286335</div>
+                        <div class="text-[10px] text-cream-800 opacity-75">適用於義大利境內緊急急難事件</div>
+                    </div>
+                    <div class="bg-cream-50 p-3 rounded-xl border border-cream-200">
+                        <div class="font-bold text-cream-900 mb-1">駐瑞士代表處 (日內瓦/伯恩)</div>
+                        <div class="text-[11px] text-cream-800 mb-1">急難救助電話：+41-79-724-4986</div>
+                    </div>
+                    <div class="bg-cream-50 p-3 rounded-xl border border-cream-200">
+                        <div class="font-bold text-cream-900 mb-1">駐法國代表處 (巴黎)</div>
+                        <div class="text-[11px] text-cream-800 mb-1">急難救助電話：+33-6-8007-4994</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel Customs & Rules -->
+            <div class="cream-card rounded-2xl p-4 space-y-3">
+                <h3 class="text-xs font-bold text-cream-900 uppercase tracking-wider flex items-center">
+                    <i class="fa-solid fa-triangle-exclamation text-amber-600 mr-2"></i> 旅遊禁忌與注意事項
+                </h3>
+                <div class="space-y-2 text-xs text-cream-800 leading-relaxed">
+                    <div class="flex items-start space-x-2">
+                        <i class="fa-solid fa-check text-olive mt-0.5"></i>
+                        <div><strong class="text-cream-900">防範扒手：</strong>義大利與法國各大觀光景點（如羅馬特雷維噴泉、巴黎地鐵）扒手猖獗，隨身包務必置於前方，切勿將手機放於外套外側口袋。</div>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <i class="fa-solid fa-check text-olive mt-0.5"></i>
+                        <div><strong class="text-cream-900">義大利火車 Check-in：</strong>搭乘 Trenitalia 區間車 (Regionale) 須於開車前在 APP 內完成 Check-in，否則查票會被視為逃票並處以罰款。</div>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <i class="fa-solid fa-check text-olive mt-0.5"></i>
+                        <div><strong class="text-cream-900">瑞士高山健行：</strong>策馬特五湖健行或Gorner Gorge峽谷請隨身攜帶保暖防風衣物、登山杖及充足水分，隨時注意末班纜車時間。</div>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <i class="fa-solid fa-check text-olive mt-0.5"></i>
+                        <div><strong class="text-cream-900">申根保險與現金：</strong>隨身攜帶申根保險證明影本與適量歐元現金，餐廳小費非強制但通常會收取少許桌費 (Coperto)。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 max-w-lg mx-auto bg-white/95 backdrop-blur-md border-t border-cream-200 z-40 px-2 py-2 flex justify-around items-center shadow-lg">
+        <button onclick="switchTab('plan')" id="nav-plan" class="flex flex-col items-center flex-1 py-1 text-terracotta transition">
+            <i class="fa-solid fa-calendar-days text-base mb-0.5"></i>
+            <span class="text-[10px] font-bold">行程表</span>
+        </button>
+        <button onclick="switchTab('guide')" id="nav-guide" class="flex flex-col items-center flex-1 py-1 text-cream-800 opacity-70 hover:opacity-100 transition">
+            <i class="fa-solid fa-book-atlas text-base mb-0.5"></i>
+            <span class="text-[10px] font-bold">導覽</span>
+        </button>
+        <button onclick="switchTab('transport')" id="nav-transport" class="flex flex-col items-center flex-1 py-1 text-cream-800 opacity-70 hover:opacity-100 transition">
+            <i class="fa-solid fa-train text-base mb-0.5"></i>
+            <span class="text-[10px] font-bold">交通</span>
+        </button>
+        <button onclick="switchTab('lists')" id="nav-lists" class="flex flex-col items-center flex-1 py-1 text-cream-800 opacity-70 hover:opacity-100 transition">
+            <i class="fa-solid fa-list-check text-base mb-0.5"></i>
+            <span class="text-[10px] font-bold">清單</span>
+        </button>
+        <button onclick="switchTab('info')" id="nav-info" class="flex flex-col items-center flex-1 py-1 text-cream-800 opacity-70 hover:opacity-100 transition">
+            <i class="fa-solid fa-circle-info text-base mb-0.5"></i>
+            <span class="text-[10px] font-bold">資訊</span>
+        </button>
+    </nav>
+
+    <!-- Accommodation Modal -->
+    <div id="accommodation-modal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full max-h-[85vh] overflow-y-auto p-5 shadow-2xl border border-cream-300 relative animate-in fade-in zoom-in duration-200">
+            <div class="flex justify-between items-center mb-4 pb-2 border-b border-cream-200">
+                <div class="flex items-center space-x-2">
+                    <span class="text-lg">🏨</span>
+                    <h3 class="text-base font-bold text-cream-900">全程住宿總覽 (Accommodations)</h3>
+                </div>
+                <button onclick="closeAccommodations()" class="w-8 h-8 rounded-full bg-cream-100 text-cream-900 flex items-center justify-center hover:bg-cream-200 font-bold">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="accommodation-list" class="space-y-2.5">
+                <!-- Javascript will inject accommodation items -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA DEFINITIONS ---
+
+        const accommodationsData = [
+            { city: "羅馬 Roma", dates: "9/29 - 10/1", inOut: "15:00 / 10:00", icon: "🏛️" },
+            { city: "梅斯特雷 Mestre", dates: "10/1 - 10/3", inOut: "14:00 / 11:00", icon: "🏙️" },
+            { city: "威斯普 Visp", dates: "10/3 - 10/5", inOut: "16:00 / 9:00", icon: "⛰️" },
+            { city: "阿訥西 Annecy", dates: "10/5 - 10/7", inOut: "16:00 / 11:00", icon: "🌊" },
+            { city: "里昂 Lyon", dates: "10/7 - 10/9", inOut: "15:00 / 11:00", icon: "🦁" },
+            { city: "亞維儂 Avignon", dates: "10/9 - 10/11", inOut: "15:00 / 11:00", icon: "🏰" },
+            { city: "普羅旺斯艾克斯 Aix", dates: "10/11 - 10/13", inOut: "16:00 / 11:00", icon: "🌻" },
+            { city: "尼斯 Nice", dates: "10/13 - 10/15", inOut: "15:00 / 9:00", icon: "🏖️" },
+            { city: "熱那亞 Genova", dates: "10/15 - 10/17", inOut: "15:00 / 11:00", icon: "⛵" },
+            { city: "佛羅倫斯 Firenze", dates: "10/17 - 10/19", inOut: "10:00 / 10:00", icon: "🎨" },
+            { city: "羅馬 Roma", dates: "10/19 - 10/22", inOut: "15:00 / 11:00", icon: "🏛️" }
+        ];
+
+        const dailyItineraryData = [
+            {
+                date: "9/29",
+                weekday: "(二)",
+                city: "羅馬 Roma",
+                temp: "26°C / 18°C",
+                status: "抵達與采買",
+                spots: [
+                    { name: "Conad Superstore", desc: "當地連鎖大型超市，補充生活用品與零食水果", type: "超市" },
+                    { name: "義大利文明宮", desc: "經典方形競技場建築，FENDI 總部所在地", type: "景點" }
+                ],
+                memo: "買慕斯",
+                transport: "REG 🚂 Fiumicino Aeroporto ➔ Villa bonelli (22 m)"
+            },
+            {
+                date: "9/30",
+                weekday: "(三)",
+                city: "羅馬 Roma",
+                temp: "25°C / 17°C",
+                status: "古城漫步",
+                spots: [
+                    { name: "特雷維噴泉", desc: "世界聞名的許願池，擲硬幣許願重返羅馬", type: "景點" },
+                    { name: "西班牙階梯", desc: "羅馬最具人氣的巴洛克風格階梯廣場", type: "景點" },
+                    { name: "AS Roma Store", desc: "羅馬足球俱樂部官方商店", type: "購物" },
+                    { name: "ZARA Rome", desc: "羅馬市中心旗艦店", type: "購物" },
+                    { name: "萬神殿", desc: "保存最完整的古羅馬穹頂神廟建築", type: "景點" },
+                    { name: "納沃納廣場", desc: "巴洛克噴泉與街頭藝術聚集地", type: "景點" },
+                    { name: "聖依搦斯蒙難堂", desc: "納沃納廣場旁的壯麗巴洛克教堂", type: "景點" },
+                    { name: "聖天使城堡", desc: "眺望台伯河與夕陽的最佳經典角度", type: "景點" }
+                ],
+                memo: "14:30到萬神殿 15:00入場",
+                transport: "市區步行 / 地鐵"
+            },
+            {
+                date: "10/1",
+                weekday: "(四)",
+                city: "梅斯特雷 Mestre",
+                temp: "22°C / 14°C",
+                status: "移動至威尼斯",
+                spots: [
+                    { name: "超市：Ali", desc: "採買糧食與隔日早餐", type: "超市" },
+                    { name: "Ca' Mestre", desc: "住宿周邊探索", type: "住宿" }
+                ],
+                memo: "搭乘早班高鐵前往威尼斯外圍住宿",
+                transport: "FR 9414 🚂 [9:35AM] Roma Termini ➔ [1:23PM] Venezia Mestre (3:48 hrs)"
+            },
+            {
+                date: "10/2",
+                weekday: "(五)",
+                city: "威尼斯 Venice",
+                temp: "21°C / 13°C",
+                status: "水鄉雙島遊",
+                spots: [
+                    { name: "彩色島Burano", desc: "以五彩繽紛漁夫小屋聞名的夢幻小島", type: "景點" },
+                    { name: "玻璃島Murano", desc: "世界聞名的威尼斯玻璃工藝發源地", type: "景點" },
+                    { name: "聖馬爾谷聖殿宗主教座堂", desc: "融合拜占庭與文藝復興的黃金大教堂", type: "景點" },
+                    { name: "學院橋看安康聖母殿", desc: "欣賞大運河與安康聖母殿絕佳視野", type: "景點" }
+                ],
+                memo: "先去ACTV領票(12水上巴士) 可以搭7:10的；聖馬可教堂要先買票；Klook買一天的水上汽艇通票$918",
+                transport: "水上巴士 ACTV Line 12 & 1"
+            },
+            {
+                date: "10/3",
+                weekday: "(六)",
+                city: "威斯普 Visp",
+                temp: "15°C / 6°C",
+                status: "跨國前往瑞士山城",
+                spots: [
+                    { name: "Migros", desc: "瑞士最大連鎖超市採買", type: "超市" },
+                    { name: "Ausserberg Hofladen-Fischerbiel", desc: "瑞士山村特色農產小舖", type: "購物" }
+                ],
+                memo: "超市開到五點；搭過去Ausserberg只要10分鐘",
+                transport: "Italo 8970 ➔ Milano Centrale ➔ Domodossola ➔ Brig ➔ Visp"
+            },
+            {
+                date: "10/4",
+                weekday: "(日)",
+                city: "策馬特 Zermatt",
+                temp: "11°C / 2°C",
+                status: "阿爾卑斯健行",
+                spots: [
+                    { name: "五湖健行", desc: "策馬特經典高山湖泊健行路線，倒映馬特洪峰", type: "景點" },
+                    { name: "Kirchbrücke", desc: "拍攝馬特洪峰日出與小鎮風光的經典橋樑", type: "景點" },
+                    { name: "Gorner Gorge 峽谷", desc: "冰川融水歷經千萬年沖刷而成的壯麗峽谷", type: "景點" },
+                    { name: "馬特洪峰觀賞點", desc: "遠眺金字塔形巨峰的最佳視角", type: "景點" }
+                ],
+                memo: "峽谷營業時間每天：09:15 - 17:45；五湖:坐火車到Sunnega 坐纜車到Blauherd接著開始徒步；要注意下山纜車末班車",
+                transport: "策馬特登山火車與纜車"
+            },
+            {
+                date: "10/5",
+                weekday: "(一)",
+                city: "日內瓦 Annecy",
+                temp: "18°C / 9°C",
+                status: "抵達日內瓦與阿訥西",
+                spots: [
+                    { name: "MANOR Genève", desc: "日內瓦大型百貨與美食街", type: "購物" },
+                    { name: "日內瓦大噴泉 Jet d’eau", desc: "世界上最高的水噴泉之一，地標噴射高達140米", type: "景點" },
+                    { name: "Carrefour City", desc: "法國便利超市", type: "超市" }
+                ],
+                memo: "日內瓦大噴泉是世界上最高水噴泉之一；日內瓦湖又稱萊芒湖；需留意行李寄存；巴士站走去BNB五分鐘",
+                transport: "IR 1814 🚂 Visp ➔ Geneve (2:19 hrs) + Flixbus 🚌 Geneve ➔ Annecy (50m)"
+            },
+            {
+                date: "10/6",
+                weekday: "(二)",
+                city: "阿訥西 Annecy",
+                temp: "19°C / 10°C",
+                status: "威尼斯小鎮風光",
+                spots: [
+                    { name: "Palais de l'Île 島宮", desc: "矗立在運河中央的中世紀三角堡壘，阿訥西地標", type: "景點" },
+                    { name: "Pont Perrière", desc: "浪漫的花卉拱橋與運河風光", type: "景點" },
+                    { name: "Panorama du lac", desc: "阿訥西湖畔全景觀賞點", type: "景點" }
+                ],
+                memo: "漫步舊城區與湖畔步道，享受阿爾卑斯山下的藍色湖水",
+                transport: "阿訥西步行漫遊"
+            },
+            {
+                date: "10/7",
+                weekday: "(三)",
+                city: "里昂 Lyon",
+                temp: "20°C / 11°C",
+                status: "美食之都里昂",
+                spots: [
+                    { name: "Monoprix", desc: "法國知名連鎖超市與百貨", type: "超市" }
+                ],
+                memo: "搭乘 Flixbus 前往法國美食之都里昂",
+                transport: "Flixbus 🚌 Annecy ➔ Lyon(Gerland) (1:40 hrs) + Metro 🚇"
+            },
+            {
+                date: "10/8",
+                weekday: "(四)",
+                city: "里昂 Lyon",
+                temp: "20°C / 12°C",
+                status: "老城古蹟探訪",
+                spots: [
+                    { name: "富維耶聖母院", desc: "俯瞰里昂全景的華麗拜占庭與羅馬式大教堂", type: "景點" },
+                    { name: "富維耶山古羅馬劇場", desc: "建於公元前15年的法國古老大型露天劇場", type: "景點" },
+                    { name: "古爾吉永斜坡", desc: "充滿文藝氣息與石階梯的歷史斜坡道", type: "景點" },
+                    { name: "雅各賓廣場", desc: "精美噴泉環繞的里昂市中心核心廣場", type: "景點" }
+                ],
+                memo: "搭纜車到山上，漫步走到山下，途中還可以欣賞羅馬遺址",
+                transport: "里昂地鐵與纜車 Funiculaire"
+            },
+            {
+                date: "10/9",
+                weekday: "(五)",
+                city: "亞維儂 Avignon",
+                temp: "22°C / 13°C",
+                status: "普羅旺斯教皇城",
+                spots: [
+                    { name: "Les Halles d'Avignon", desc: "亞維儂室內傳統美食市場，在地食材匯聚", type: "市場" }
+                ],
+                memo: "市場營業時間 6:00 - 14:00",
+                transport: "Flixbus 🚌 Lyon ➔ Avignon(Le Pontet) (3:20 hrs)"
+            },
+            {
+                date: "10/10",
+                weekday: "(六)",
+                city: "亞維儂 Avignon",
+                temp: "23°C / 13°C",
+                status: "教皇宮殿巡禮",
+                spots: [
+                    { name: "教皇宮", desc: "世界最大的哥德式教皇宮殿，中世紀天主教中心", type: "景點" },
+                    { name: "HI! BOWL & BUBBLE", desc: "在地特色輕食茶飲", type: "餐廳" },
+                    { name: "鐘樓廣場", desc: "熱鬧的亞維儂市中心廣場", type: "景點" }
+                ],
+                memo: "教皇宮 + 教皇花園單票 16 歐",
+                transport: "亞維儂古城步行"
+            },
+            {
+                date: "10/11",
+                weekday: "(日)",
+                city: "普羅旺斯艾克斯 Aix",
+                temp: "22°C / 12°C",
+                status: "噴泉之都艾克斯",
+                spots: [
+                    { name: "Ekosport Le Pontet", desc: "大型戶外運動用品店", type: "購物" },
+                    { name: "Decathlon", desc: "迪卡儂戶外用品補給", type: "購物" },
+                    { name: "Carrefour Express", desc: "便利超商補給", type: "超市" },
+                    { name: "Place des Cardeurs", desc: "充滿露天咖啡座的熱鬧廣場", type: "景點" }
+                ],
+                memo: "搭車的地方很偏；博物館 10:00 營業",
+                transport: "Flixbus 🚌 Avignon ➔ Aix en Provence + A公車到老城區"
+            },
+            {
+                date: "10/12",
+                weekday: "(一)",
+                city: "普羅旺斯艾克斯 Aix",
+                temp: "21°C / 11°C",
+                status: "山城噴泉漫遊",
+                spots: [
+                    { name: "Les Allées", desc: "綠樹成蔭的米拉波林蔭大道", type: "景點" },
+                    { name: "圓亭噴泉-勒內國王噴泉", desc: "艾克斯最具代表性的大型噴泉地標", type: "景點" }
+                ],
+                memo: "老城區漫遊，欣賞塞尚故鄉的藝術氣息",
+                transport: "市區步行"
+            },
+            {
+                date: "10/13",
+                weekday: "(二)",
+                city: "尼斯 Nice",
+                temp: "23°C / 15°C",
+                status: "蔚藍海岸尼斯",
+                spots: [
+                    { name: "Otera Nice", desc: "在地生鮮食材與蔬果超市", type: "超市" }
+                ],
+                memo: "市集每天都有，一般從早上8點到中午結束；站點有點偏要搭30分鐘公車",
+                transport: "Flixbus 🚌 Aix en Provence ➔ Nice (2:10 hrs)"
+            },
+            {
+                date: "10/14",
+                weekday: "(三)",
+                city: "尼斯 Nice",
+                temp: "24°C / 16°C",
+                status: "天使灣與城堡山",
+                spots: [
+                    { name: "賽雷亞花果市集", desc: "地中海風情濃厚的百年傳統露天花果市場", type: "市場" },
+                    { name: "城堡山公園(城堡電梯)", desc: "俯瞰天使灣蔚藍海岸全景的絕佳山頂公園", type: "景點" }
+                ],
+                memo: "電梯 10:00 開放",
+                transport: "尼斯步行與景觀電梯"
+            },
+            {
+                date: "10/15",
+                weekday: "(四)",
+                city: "熱那亞 Genova",
+                temp: "22°C / 14°C",
+                status: "義大利航海之都",
+                spots: [
+                    { name: "Tuday Conad", desc: "義大利在地大型超商", type: "超市" },
+                    { name: "Focaccia e Dintorni", desc: "品嚐熱那亞道地正宗佛卡夏麵包", type: "美食" },
+                    { name: "古港口", desc: "經由倫佐·皮亚诺改造的歷史老港與海濱", type: "景點" }
+                ],
+                memo: "Trenitalia APP 購票 (開車前於 App 內按下 Check-in)；熱那亞有名的是佛卡夏",
+                transport: "TER (法國區間) 到 Ventimiglia 轉 IC (自強號) 至熱那亞"
+            },
+            {
+                date: "10/16",
+                weekday: "(五)",
+                city: "熱那亞 Genova",
+                temp: "21°C / 13°C",
+                status: "利古里亞海濱風光",
+                spots: [
+                    { name: "Vernazzola Beach", desc: "隱藏在彩色漁村間的寧靜海灘", type: "景點" },
+                    { name: "Boccadasse Beach", desc: "色彩繽紛的古老漁港與浪漫海灣", type: "景點" },
+                    { name: "Belvedere del Righi", desc: "搭乘纜車登上山丘俯瞰熱那亞港口全景", type: "景點" }
+                ],
+                memo: "公車搭到 Italia 5/LIDO 走義大利大道 (Corso Italia) 散步過去附近海灘",
+                transport: "熱那亞公車與山丘纜車 Funicolare"
+            },
+            {
+                date: "10/17",
+                weekday: "(六)",
+                city: "佛羅倫斯 Firenze",
+                temp: "23°C / 12°C",
+                status: "文藝復興搖籃",
+                spots: [
+                    { name: "聖母百花聖殿", desc: "擁有巨大宏偉穹頂的文藝復興建築奇蹟", type: "景點" },
+                    { name: "中央市場", desc: "體驗托斯卡納在地美食與牛肚包的熱鬧市集", type: "市場" },
+                    { name: "Conad City", desc: "市中心便利超市", type: "超市" }
+                ],
+                memo: "聖母百花聖殿免費但要排很長的隊伍 (10:15 – 15:45)",
+                transport: "Flixbus 🚌 Genoa ➔ Florence (2:40 hrs)"
+            },
+            {
+                date: "10/18",
+                weekday: "(日)",
+                city: "佛羅倫斯 Firenze",
+                temp: "22°C / 12°C",
+                status: "比薩斜塔與老橋夕陽",
+                spots: [
+                    { name: "比薩斜塔", desc: "世界聞名的中世紀世界奇觀鐘樓", type: "景點" },
+                    { name: "奇蹟廣場", desc: "集大教堂、洗禮堂與斜塔於一身的純白廣場", type: "景點" },
+                    { name: "領主廣場", desc: "露天雕塑博物館與文藝復興政治中心", type: "景點" },
+                    { name: "老橋看夕陽", desc: "橫跨阿爾諾河的古老商店橋梁與絕美日落", type: "景點" }
+                ],
+                memo: "搭火車往返比薩半日遊，傍晚回佛羅倫斯老橋賞夕陽",
+                transport: "義大利國鐵 Regional 往返比薩"
+            },
+            {
+                date: "10/19",
+                weekday: "(一)",
+                city: "羅馬 Roma",
+                temp: "24°C / 15°C",
+                status: "重返永恆之城",
+                spots: [
+                    { name: "iN's Mercato S.p.A.", desc: "羅馬在地平價連鎖超市", type: "超市" }
+                ],
+                memo: "搭乘 Flixbus 從佛羅倫斯返回羅馬",
+                transport: "Flixbus 🚌 Florence(Villa Costanza) ➔ Roma Tiburtina (3:15 hrs)"
+            },
+            {
+                date: "10/20",
+                weekday: "(二)",
+                city: "羅馬 Roma",
+                temp: "24°C / 15°C",
+                status: "古羅馬帝國巡禮",
+                spots: [
+                    { name: "羅馬競技場", desc: "世界新七大奇蹟之一，古羅馬帝國巨大格鬥場", type: "景點" },
+                    { name: "古羅馬廣場", desc: "古羅馬帝國的政治與經濟中心廢墟群", type: "景點" },
+                    { name: "帕拉丁山", desc: "羅馬七座山丘中發源地與皇帝宮殿區", type: "景點" },
+                    { name: "提圖斯凱旋門", desc: "紀念羅馬軍事勝利的古老凱旋門", type: "景點" },
+                    { name: "維托里亞諾", desc: "白色大理石建造的義大利統一紀念堂", type: "景點" },
+                    { name: "聖母大殿", desc: "羅馬四大宗座聖殿之一，內部金碧輝煌", type: "景點" }
+                ],
+                memo: "15:00到羅馬競技場找供應商身上印有 I Love Rome，15:30可以入場；合照可以沿著競技場往 La Biga 餐廳方向爬上去",
+                transport: "羅馬地鐵與步行"
+            },
+            {
+                date: "10/21",
+                weekday: "(三)",
+                city: "羅馬 Roma",
+                temp: "23°C / 14°C",
+                status: "阿庇亞大道自然公園",
+                spots: [
+                    { name: "Parco Regionale dell'Appia Antica", desc: "古羅馬帝國最重要的石板大道與郊野自然公園", type: "景點" }
+                ],
+                memo: "漫步阿庇亞古道，探索古羅馬地下墓穴與石板路遺跡",
+                transport: "羅馬公車至 Appia Antica"
+            },
+            {
+                date: "10/22",
+                weekday: "(四)",
+                city: "羅馬 Roma ➔ 啟程返台",
+                temp: "22°C / 14°C",
+                status: "梵蒂岡聖彼得大教堂",
+                spots: [
+                    { name: "聖彼得大教堂", desc: "世界最大的天主教堂，文藝復興建築瑰寶與米開朗基羅傑作", type: "景點" },
+                    { name: "Monumento di Santa Caterina da Siena", desc: "聖凱瑟琳紀念雕像與廣場", type: "景點" }
+                ],
+                memo: "聖彼得大教堂進博物館要門票，大殿不用；17:00 拿行李準備前往機場",
+                transport: "地鐵至 Termini 轉機場特快特火車"
+            },
+            {
+                date: "10/23",
+                weekday: "(五)",
+                city: "抵達台灣 TPE",
+                temp: "28°C / 22°C",
+                status: "平安返抵溫暖家園",
+                spots: [],
+                memo: "搭乘 EK0386 經杜拜轉機，於 21:40 抵達桃園國際機場 TPE",
+                transport: "EK0096 ➔ EK0386 航班返台"
+            }
+        ];
+
+        const guidesData = [
+            { title: "義大利文明宮", city: "羅馬", cat: "義大利・建築", intro: "位於羅馬 EUR 區的標誌性建築，被稱為「方形競技場」。由墨索里尼規劃於1930年代，外觀擁有整齊排列的拱形窗洞，現為義大利奢侈品牌 FENDI 總部所在地。", trivia: "建築外立面共有 216 個拱門（每排 9 個，共 6 層），象徵著義大利fascio的數字與墨索里尼的名字首字母 M。" },
+            { title: "特雷維噴泉", city: "羅馬", cat: "義大利・名勝", intro: "羅馬最大的巴洛克風格噴泉，結合了海神尼普頓雕像與壯麗的海馬岩石雕刻。傳說背對噴泉投擲一枚硬幣即可重返羅馬，投兩枚會遇到愛情，三枚則會步入婚姻。", trivia: "據統計，每天從噴泉中撈出的硬幣高達數千歐元，這些善款全數捐贈給羅馬天主教慈善機構 Caritas。" },
+            { title: "西班牙階梯", city: "羅馬", cat: "義大利・景點", intro: "連結西班牙廣場與三位聖者教堂的宏偉階梯，由 135 階梯組成。這裡曾是濟慈、雪萊等許多浪漫主義詩人流連忘返的文藝聚集地。", trivia: "雖然名為西班牙階梯，但實際上是由法國外交官贊助資金、義大利建築師 Francesco de Sanctis 於 1725 年設計建造的。" },
+            { title: "萬神殿", city: "羅馬", cat: "義大利・古蹟", intro: "古羅馬時期完整保存至今的唯一神廟建築，以其完美的無鋼筋混凝土無支撐大圓頂聞名於世。", trivia: "圓頂正中央有一個直徑 9 米的圓形採光孔（Oculus），下雨時雨水會落入地板的精巧排水孔排走，是古代工程學的奇蹟。" },
+            { title: "納沃納廣場", city: "羅馬", cat: "義大利・廣場", intro: "建於古羅馬圖密善競技場舊址的長方形巴洛克廣場，以貝尼尼設計的「四河噴泉」為核心，充滿街頭畫家與熱鬧氣氛。", trivia: "廣場中央的四河噴泉象徵當時文藝界知名的四大河流：尼羅河、多瑙河、恆河與拉普拉塔河。" },
+            { title: "聖依搦斯蒙難堂", city: "羅馬", cat: "義大利・教堂", intro: "位於納沃納廣場西側的巴洛克傑作，紀念在古羅馬時期殉道的聖依搦斯少女。", trivia: "傳說聖依搦斯在遭受迫害時奇蹟般地長出長髮遮蔽裸體，教堂即建立在她殉難的競技場原址上。" },
+            { title: "聖天使城堡", city: "羅馬", cat: "義大利・古堡", intro: "原為羅馬皇帝哈德良的陵墓，中世紀被改建為教皇要塞與城堡，並有秘密通道與梵蒂岡相連。", trivia: "城堡頂端矗立著巨大的大天使米迦勒銅像，相傳西元 590 年羅馬瘟疫時教皇在此見到天使收刀，因而得名。" },
+            { title: "彩色島 Burano", city: "威尼斯", cat: "義大利・離島", intro: "以五彩繽紛漁夫小屋聞名的潟湖小島，家家戶戶將房屋漆成鮮豔色彩，是攝影愛好者的天堂。", trivia: "傳說早期漁夫出海捕魚歸來時經常大霧迷漫，將房子漆成不同鮮艷顏色是為了讓漁夫在遠處就能一眼認出自己的家。" },
+            { title: "玻璃島 Murano", city: "威尼斯", cat: "義大利・離島", intro: "世界聞名的威尼斯玻璃工藝發源地，島上滿佈傳統玻璃工坊與精美藝術品店。", trivia: "為防止玻璃吹製祕密外洩，共和國曾在 13 世紀下令將所有工匠集中在穆拉諾島居住，私自逃出者甚至會被判處死刑。" },
+            { title: "聖馬爾谷聖殿宗主教座堂", city: "威尼斯", cat: "義大利・大教堂", intro: "融合拜占庭、羅馬與哥德式風格的黃金大教堂，內部鑲嵌了數千平方米輝煌的金箔馬賽克壁畫。", trivia: "教堂頂部的四匹銅馬雕塑原為古希臘時期文物，曾被拿破崙掠奪至巴黎，後才歸還威尼斯。" },
+            { title: "學院橋", city: "威尼斯", cat: "義大利・橋樑", intro: "橫跨威尼斯大運河的四大木造橋梁之一，站在橋上向北眺望可將安康聖母殿與大運河夕陽盡收眼底。", trivia: "學院橋最初建於 1854 年為鐵橋，因結構老舊後於 1930 年代改建為木造結構，是威尼斯極少數的木橋。" },
+            { title: "Gorner Gorge 峽谷", city: "策馬特", cat: "瑞士・自然", intro: "由冰川融水歷經千萬年下切沖刷而成的壯麗阿爾卑斯峽谷，木棧道緊鄰湍急清澈的冰川溪流。", trivia: "峽谷壁面上可以清晰看到不同地質年代的冰川磨痕與岩石紋理，是阿爾卑斯造山運動的最佳活化石。" },
+            { title: "日內瓦大噴泉 Jet d’eau", city: "日內瓦", cat: "瑞士・地標", intro: "位於日內瓦湖畔的世界著名噴泉地標，強力水柱將湖水噴射高達 140 米，壯觀無比。", trivia: "大噴泉最初在 1886 年時只是一個水壓釋放閥，後來因大受歡迎而改建成獨立的巨型藝術觀光噴泉。" },
+            { title: "Palais de l'Île 島宮", city: "阿訥西", cat: "法國・古堡", intro: "矗立在泰烏河運河正中央的中世紀石造三角堡壘，外形酷似一艘石船，是阿訥西最上鏡的象徵。", trivia: "這座島宮在漫長的歷史中曾先後擔任過領主宅邸、法院、造幣廠甚至是監獄多重角色。" },
+            { title: "富維耶聖母院", city: "里昂", cat: "法國・教堂", intro: "聳立在富維耶山上俯瞰整個里昂市容的宏偉聖母院，融合了拜占庭與羅馬式建築風格。", trivia: "聖母院內部裝飾極其奢華，金箔馬賽克與精緻花窗令人驚嘆，每年吸引數百萬朝聖者與遊客造訪。" },
+            { title: "富維耶山古羅馬劇場", city: "里昂", cat: "法國・古蹟", intro: "建於公元前 15 年奧古斯都大帝時期的法國最古老大型露天劇場，曾可容納萬名觀眾觀賞戲劇與競技。", trivia: "劇場依山而建，至今夏季仍會舉辦大型露天音樂節與藝術表演，古羅馬音響學設計至今依然完美運作。" },
+            { title: "古爾吉永斜坡", city: "里昂", cat: "法國・老街", intro: "里昂老城區中最具詩意與文藝氣息的陡峭石階坡道，兩旁古老房屋與攀爬綠藤充滿法式風情。", trivia: "這裡曾是里昂絲綢工匠（Canuts）每日通勤上下班的重要必經之路，見證了里昂絲綢工業的輝煌歲月。" },
+            { title: "雅各賓廣場", city: "里昂", cat: "法國・廣場", intro: "位於里昂市中心的美麗文藝復興廣場，中央矗立著精緻的文藝復興大理石噴泉雕像。", trivia: "廣場周圍環繞著優雅的 19 世紀奧斯曼風格建築，是里昂市民休憩與舉辦市集的熱門核心。" },
+            { title: "教皇宮", city: "亞維儂", cat: "法國・宮殿", intro: "14 世紀天主教教廷從羅馬遷至亞維儂時建造的世界最大哥德式教皇宮殿，宛如一座防禦堡壘。", trivia: "在西方歷史上的「亞維儂之囚」時期，共有七位教皇在此統治天主教會，其宮殿規模甚至超過當時歐洲許多皇宮。" },
+            { title: "鐘樓廣場", city: "亞維儂", cat: "法國・廣場", intro: "亞維儂市中心的熱鬧心臟地帶，聚集了市政廳、歌劇院與無數露天咖啡座。", trivia: "廣場上的市政廳鐘樓每到整點會有有趣的機械人偶敲鐘表演，是遊客休憩與感受南法慢活步調的最佳去處。" },
+            { title: "賽雷亞花果市集", city: "尼斯", cat: "法國・市集", intro: "位於尼斯老城區著名的百年露天傳統市集，販售南法新鮮蔬果、鮮花與手工香皂。", trivia: "每逢周一此處會變身為大型古董跳蚤市集，可以尋獲許多精緻的法式懷舊古董與銀器。" },
+            { title: "城堡山公園", city: "尼斯", cat: "法國・公園", intro: "俯瞰天使灣蔚藍海岸與尼斯老港全景的山頂綠洲公園，設有人工瀑布與古代城堡遺址。", trivia: "遊客可以選擇搭乘免費的景觀電梯直達山頂，省去爬山的疲勞，輕鬆享受地中海無敵海景。" },
+            { title: "古港口", city: "尼斯", cat: "法國・港口", intro: "尼斯歷史悠久的舊港口，停滿了豪華遊艇與傳統木造釣魚船，周圍充滿彩色巴洛克建築。", trivia: "古港口由薩伏依王朝於 18 世紀開始興建，近年經建築大師改造後成為蔚藍海岸現代與古典交融的航海中心。" },
+            { title: "Vernazzola Beach", city: "熱那亞", cat: "義大利・海灘", intro: "隱藏在熱那亞斯特爾達區的寧靜小海灣與卵石海灘，保有最純樸的義大利漁村風情。", trivia: "這裡遠離熱鬧的商業觀光區，是當地人週末散步、曬太陽與享受地中海海風的私房祕境。" },
+            { title: "Boccadasse Beach", city: "熱那亞", cat: "義大利・海灘", intro: "色彩繽紛的古老漁村海灣，船隻靜靜停泊在卵石灘上，周圍有極著名的義式冰淇淋與海鮮餐廳。", trivia: "博卡達斯漁村的建築風格啟發了義大利許多沿海小鎮的設計，是地中海浪漫夕陽的絕佳觀賞點。" },
+            { title: "聖母百花聖殿", city: "佛羅倫斯", cat: "義大利・大教堂", intro: "文藝復興時期的建築巨作，由布魯內列斯基設計的巨大紅磚穹頂被譽為建築史上的奇蹟。", trivia: "大教堂外牆由綠、白、粉紅三色大理石拼貼而成，象徵著信、望、愛三種基督教美德。" },
+            { title: "中央市場", city: "佛羅倫斯", cat: "義大利・市場", intro: "建於 19 世紀鋼鐵與玻璃結構的托斯卡納美食殿堂，一樓販售新鮮食材，二樓則是熱鬧的美食街。", trivia: "來到這裡絕對不能錯過全義大利聞名的 Nerbone 牛肚包（Panino con la Trippa），自 1872 年起營業至今。" },
+            { title: "比薩斜塔", city: "比薩", cat: "義大利・地標", intro: "奇蹟廣場上世界聞名的中世紀獨立鐘樓，因地基不均勻沉降而傾斜卻屹立不搖數百年。", trivia: "伽利略曾在此斜塔頂端進行著名的「自由落體實驗」，證明了不同重量物體下落速度相同的物理定律。" },
+            { title: "奇蹟廣場", city: "比薩", cat: "義大利・廣場", intro: "被義大利作家鄧農齊奧形容為「草坪上的奇蹟」的壯麗宗教廣場，集大教堂、洗禮堂與斜塔於一體。", trivia: "廣場上的草皮維護極其嚴格，遊客只能在指定步道行走，以維護這片世界文化遺產的純淨草坪。" },
+            { title: "領主廣場", city: "佛羅倫斯", cat: "義大利・廣場", intro: "佛羅倫斯共和國的政治與歷史核心，宛如一座露天文藝復興雕塑博物館。", trivia: "廣場上的老宮（Palazzo Vecchio）塔樓高達 94 米，曾是麥地奇家族權力統治的核心象徵。" },
+            { title: "老橋", city: "佛羅倫斯", cat: "義大利・橋樑", intro: "橫跨阿爾諾河的最古老石橋，橋上兩側密密麻麻地建造了歷史悠久的珠寶金銀工坊。", trivia: "在二戰德軍撤退時，希特勒下令炸毀佛羅倫斯所有橋梁，唯獨這座老橋因歷史價值而奇蹟般地完整保留下來。" },
+            { title: "羅馬競技場", city: "羅馬", cat: "義大利・世界奇蹟", intro: "古羅馬帝國時期最大的圓形角鬥場，曾舉辦過生死格鬥、海戰模擬與盛大慶典。", trivia: "競技場下方複雜的地窖地下室（Hypogeum）設有精密的木製升降機系統，能將猛獸與角鬥士直接從地底吊升至舞台。" },
+            { title: "古羅馬廣場", city: "羅馬", cat: "義大利・古蹟", intro: "古羅馬共和國與帝國時期的城市政治、宗教與商業中心廢墟群，神廟與凱旋門遺跡林立。", trivia: "在羅馬帝國衰落後，古羅馬廣場曾一度被荒廢並作為牧場使用，被稱為「牛場」（Campo Vaccino）。" },
+            { title: "帕拉丁山", city: "羅馬", cat: "義大利・遺址", intro: "羅馬七座山丘中最具歷史地位的發源地，傳說羅馬城創建者羅慕路斯在此建立最初的聚落。", trivia: "後來的羅馬皇帝紛紛在此修建豪華皇宮，「皇宮」（Palace）一詞的英文源頭（Palium/Palatium）即源自此山丘。" },
+            { title: "提圖斯凱旋門", city: "羅馬", cat: "義大利・凱旋門", intro: "建於公元 82 年的古羅馬保存最完整的早期凱旋門，紀念提圖斯皇帝平定猶太起義的勝利。", trivia: "拿破崙當年在巴黎建造凱旋門時，曾專門參考並研究了這座提圖斯凱旋門的黃金比例與浮雕設計。" },
+            { title: "維托里亞諾", city: "羅馬", cat: "義大利・紀念館", intro: "為紀念義大利統一而建造的巨型純白大理石紀念堂，因外形獨特被羅馬人暱稱為「結婚蛋糕」或「打字機」。", trivia: "紀念堂內部設有義大利無名烈士墓，永遠燃燒著不滅的長明火，由兩名儀仗兵日夜輪流守護。" },
+            { title: "聖母大殿", city: "羅馬", cat: "義大利・大教堂", intro: "羅馬四大宗座聖殿之一，傳說聖母瑪利亞顯靈指示在八月降雪的地點興建此教堂。", trivia: "教堂頂部天花板貼滿了哥倫布從美洲帶回歐洲的第一批黃金，金碧輝煌令人嘆為觀止。" },
+            { title: "Parco Regionale dell'Appia Antica", city: "羅馬", cat: "義大利・公園", intro: "被稱為「所有道路之女王」的古羅馬阿庇亞石板大道周邊保護區，沿途古松參天、古墓遺跡林立。", trivia: "這條道路建於公元前 312 年，至今仍可踩踏在兩千年前古羅馬人走過的原始玄武岩石板上。" },
+            { title: "聖彼得大教堂", city: "梵蒂岡", cat: "梵蒂岡・大教堂", intro: "世界最大的天主教堂，文藝復興與巴洛克建築的巔峰之作，由米開朗基羅、伯尼尼等大師合力打造。", trivia: "大教堂內部的聖彼得大圓頂高度達 136 米，遊客登上頂端可以俯瞰整個梵蒂岡城邦與羅馬全景。" }
+        ];
+
+        const transportData = [
+            { date: "9/29 (二)", route: "Fiumicino Aeroporto ➔ Villa bonelli", type: "火車 REG", duration: "22 分鐘", details: "抵達羅馬機場後轉乘區間車前往市區住宿點。" },
+            { date: "10/1 (四)", route: "Roma Termini ➔ Venezia Mestre", type: "高鐵 FR 9414", duration: "3小時48分", details: "發車 [9:35 AM] ➔ 抵達 [1:23 PM]。快速穿梭義大利南北。" },
+            { date: "10/3 (六)", route: "Venezia Mestre ➔ Milano Centrale", type: "高鐵 Italo 8970", duration: "2小時16分", details: "發車 [6:09 AM] ➔ 抵達 [8:25 AM]。早起前往米蘭。" },
+            { date: "10/3 (六)", route: "Milano Centrale ➔ Domodossola", type: "火車 RE 2408", duration: "1小時40分", details: "發車 [9:25 AM] ➔ 抵達 [11:05 AM]。" },
+            { date: "10/3 (六)", route: "Domodossola ➔ Brig", type: "火車 IR 3022", duration: "28 分鐘", details: "發車 [1:48 PM] ➔ 抵達 [2:16 PM]。跨入瑞士境內。" },
+            { date: "10/3 (六)", route: "Brig ➔ Visp", type: "火車 IR 90 1824", duration: "7 分鐘", details: "發車 [2:26 PM] ➔ 抵達 [2:33 PM]。抵達山城住宿點。" },
+            { date: "10/5 (一)", route: "Visp ➔ Geneve (日內瓦)", type: "火車 IR 1814", duration: "2小時19分", details: "發車 [9:36 AM] ➔ 抵達 [11:55 AM]。欣賞湖光山色。" },
+            { date: "10/5 (一)", route: "Geneve ➔ Annecy (阿訥西)", type: "長途巴士 Flixbus", duration: "50 分鐘", details: "發車 [3:15 PM] ➔ 抵達 [4:05 PM]。跨國前往法國湖城。" },
+            { date: "10/7 (三)", route: "Annecy ➔ Lyon(Gerland)", type: "長途巴士 Flixbus", duration: "1小時40分", details: "發車 [1:05 PM] ➔ 抵達 [2:45 PM]。" },
+            { date: "10/7 (三)", route: "Stade de Gerland ➔ Gare d’Oullins", type: "地鐵 Metro", duration: "2 分鐘", details: "里昂市區地鐵轉乘。" },
+            { date: "10/9 (五)", route: "Lyon(Gerland) ➔ Avignon(Le Pontet)", type: "長途巴士 Flixbus", duration: "3小時20分", details: "發車 [9:30 AM] ➔ 抵達 [12:50 PM]。前往普羅旺斯。" },
+            { date: "10/11 (日)", route: "Avignon ➔ Aix en Provence", type: "長途巴士 Flixbus", duration: "1小時05分", details: "發車 [4:15 PM] ➔ 抵達 [5:20 PM]。" },
+            { date: "10/11 (日)", route: "Aix 巴士站 ➔ 舊城區", type: "A公車", duration: "20 分鐘", details: "每20分鐘一班直達老城區。" },
+            { date: "10/13 (二)", route: "Aix en Provence ➔ Nice", type: "長途巴士 Flixbus", duration: "2小時10分", details: "發車 [11:10 AM] ➔ 抵達 [1:20 PM]。抵達蔚藍海岸。" },
+            { date: "10/15 (四)", route: "Nice ➔ Ventimiglia ➔ Genova", type: "法鐵TER ➔ 義鐵IC", duration: "約 3 小時", details: "搭TER到邊境Ventimiglia轉乘義大利IC自強號至熱那亞。" },
+            { date: "10/17 (六)", route: "Genoa ➔ Florence (佛羅倫斯)", type: "長途巴士 Flixbus", duration: "2小時40分", details: "發車 [8:30 AM] ➔ 抵達 [11:10 AM]。" },
+            { date: "10/19 (一)", route: "Florence(Villa Costanza) ➔ Roma Tiburtina", type: "長途巴士 Flixbus", duration: "3小時15分", details: "發車 [10:35 AM] ➔ 抵達 [1:50 PM]。返回羅馬。" }
+        ];
+
+        const checklistData = [
+            {
+                category: "事先申請與文件",
+                items: ["護照 (效期6個月以上)", "申根保險證明與影本", "機票電子憑證/住宿預約單", "火車通行證/車票 (Trenitalia/Italo/Flixbus)", "國際駕照(若需租車)"]
+            },
+            {
+                category: "隨身小包 (隨身攜帶)",
+                items: ["護照與現金(歐元/瑞士法郎)", "信用卡與金融卡", "眼藥水 / 護唇膏", "個人常備藥品 / 暈船暈機藥 / 止痛藥", "衛生紙 / 濕紙巾", "降噪耳機 / 藍牙耳機", "行動電源與充電線", "手機與手錶充電線"]
+            },
+            {
+                category: "後背包 / 隨身裝備",
+                items: ["軟水壺 / 手提掛繩", "貼身防搶小包", "大包抽取式衛生紙", "頸枕 / 3M耳塞 (長途飛機)", "腿部舒緩貼布 / 腿腿綑綁", "底片相機與底片", "輕便防風外套", "拋棄式口罩"]
+            },
+            {
+                category: "行李箱 (寄艙)",
+                items: ["換洗衣物 / 內衣褲 (依24天準備)", "化妝包 / 體香劑 / 毛巾", "常備藥品 / 防曬乳", "日拋隱形眼鏡 * 30副 / 備用眼鏡", "萬國轉接頭 / 充電插座", "隨身衛生紙 * 3 / 環保購物袋 / 迪卡儂隨身小包 / 雨傘", "零食點心 (茶包/泡麵)", "室內輕便拖鞋", "腳踏車鎖 (火車行李架防盜用)"]
+            }
+        ];
+
+        // --- STATE MANAGEMENT ---
+        let currentDayIndex = 0; // default 9/29
+
+        // --- INITIALIZATION ---
+        window.addEventListener('DOMContentLoaded', () => {
+            renderDateSelector();
+            renderDailyItinerary(0);
+            renderGuides(guidesData);
+            renderTransportTimeline();
+            renderChecklist();
+            renderAccommodationsModalContent();
+        });
+
+        // --- TAB SWITCHING LOGIC ---
+        function switchTab(tabId) {
+            const tabs = ['plan', 'guide', 'transport', 'lists', 'info'];
+            tabs.forEach(t => {
+                const el = document.getElementById(`tab-${t}`);
+                const navBtn = document.getElementById(`nav-${t}`);
+                if (t === tabId) {
+                    el.classList.remove('hidden');
+                    navBtn.className = "flex flex-col items-center flex-1 py-1 text-terracotta transition";
+                } else {
+                    el.classList.add('hidden');
+                    navBtn.className = "flex flex-col items-center flex-1 py-1 text-cream-800 opacity-70 hover:opacity-100 transition";
+                }
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // --- RENDER PLAN (ITINERARY) ---
+        function renderDateSelector() {
+            const container = document.getElementById('date-selector');
+            container.innerHTML = '';
+            dailyItineraryData.forEach((day, index) => {
+                const btn = document.createElement('button');
+                const isActive = index === currentDayIndex;
+                btn.className = `flex-shrink-0 px-3 py-2 rounded-xl text-xs font-bold transition flex flex-col items-center border ${
+                    isActive 
+                        ? 'bg-terracotta text-white border-terracotta shadow-md scale-105' 
+                        : 'bg-white text-cream-900 border-cream-300 hover:bg-cream-100'
+                }`;
+                btn.innerHTML = `
+                    <span class="text-[10px] opacity-90">${day.date}</span>
+                    <span class="text-sm font-extrabold mt-0.5">${day.weekday}</span>
+                `;
+                btn.onclick = () => {
+                    currentDayIndex = index;
+                    renderDateSelector();
+                    renderDailyItinerary(index);
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function renderDailyItinerary(index) {
+            const day = dailyItineraryData[index];
+            const container = document.getElementById('daily-itinerary-container');
+            
+            let spotsHtml = '';
+            if (day.spots && day.spots.length > 0) {
+                spotsHtml = day.spots.map(spot => `
+                    <div class="bg-white rounded-2xl p-3.5 mb-2.5 border border-cream-200 shadow-sm flex justify-between items-center transition hover:border-terracotta/50">
+                        <div class="pr-2">
+                            <div class="flex items-center space-x-1.5 mb-0.5">
+                                <span class="bg-cream-100 text-cream-900 text-[10px] px-2 py-0.5 rounded-md font-bold">${spot.type}</span>
+                                <h4 class="text-xs font-bold text-cream-900">${spot.name}</h4>
+                            </div>
+                            <p class="text-[11px] text-cream-800 leading-snug">${spot.desc}</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.name + ' ' + day.city)}" target="_blank" class="flex-shrink-0 bg-cream-100 hover:bg-terracotta hover:text-white text-cream-900 text-[11px] px-2.5 py-1.5 rounded-xl border border-cream-300 transition flex items-center space-x-1">
+                            <i class="fa-solid fa-location-dot text-terracotta group-hover:text-white"></i>
+                            <span class="font-medium">地圖</span>
+                        </a>
+                    </div>
+                `).join('');
+            } else {
+                spotsHtml = `<div class="bg-white rounded-2xl p-4 text-center text-xs text-cream-800 border border-cream-200">本日為自由活動、移動或返程日。</div>`;
+            }
+
+            container.innerHTML = `
+                <div class="cream-card rounded-2xl p-4 space-y-3 animate-in fade-in duration-300">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center pb-3 border-b border-cream-200">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-cream-900 text-white text-xs px-2.5 py-1 rounded-xl font-bold">${day.date} ${day.weekday}</span>
+                            <span class="text-xs font-bold text-cream-900">${day.city}</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-white border border-cream-300 text-cream-900 text-[11px] px-2.5 py-1 rounded-xl shadow-sm flex items-center space-x-1">
+                                <i class="fa-solid fa-cloud-sun text-terracotta"></i>
+                                <span class="font-bold">${day.temp}</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Status badge -->
+                    <div class="flex items-center space-x-1 text-[11px] text-olive font-bold">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>今日重點：${day.status}</span>
+                    </div>
+
+                    <!-- Spots List -->
+                    <div class="space-y-1">
+                        <div class="text-[11px] font-bold text-cream-800 mb-1 uppercase tracking-wider">景點與店家清單</div>
+                        ${spotsHtml}
+                    </div>
+
+                    <!-- Memo Section -->
+                    ${day.memo ? `
+                        <div class="bg-[#FDFBF7] rounded-xl p-3 border border-cream-300 text-xs space-y-1">
+                            <div class="font-bold text-terracotta flex items-center">
+                                <i class="fa-solid fa-note-sticky mr-1.5"></i> 每日行程備忘錄
+                            </div>
+                            <div class="text-cream-900 leading-relaxed">${day.memo}</div>
+                        </div>
+                    ` : ''}
+
+                    <!-- Transport Section -->
+                    ${day.transport ? `
+                        <div class="bg-[#F7F3E9] rounded-xl p-3 border border-cream-300 text-xs space-y-1">
+                            <div class="font-bold text-olive flex items-center">
+                                <i class="fa-solid fa-train-subway mr-1.5"></i> 當日交通方式
+                            </div>
+                            <div class="text-cream-900 font-medium leading-relaxed">${day.transport}</div>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        // --- ACCOMMODATIONS MODAL ---
+        function openAccommodations() {
+            document.getElementById('accommodation-modal').classList.remove('hidden');
+        }
+        function closeAccommodations() {
+            document.getElementById('accommodation-modal').classList.add('hidden');
+        }
+        function renderAccommodationsModalContent() {
+            const container = document.getElementById('accommodation-list');
+            container.innerHTML = accommodationsData.map(acc => `
+                <div class="bg-cream-50 rounded-2xl p-3 border border-cream-200 flex justify-between items-center">
+                    <div class="flex items-center space-x-2.5">
+                        <span class="text-xl">${acc.icon}</span>
+                        <div>
+                            <div class="text-xs font-bold text-cream-900">${acc.city}</div>
+                            <div class="text-[10px] text-cream-800 opacity-80">${acc.dates}</div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] bg-white border border-cream-300 px-2 py-1 rounded-lg text-terracotta font-bold block">
+                            入/退: ${acc.inOut}
+                        </span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // --- RENDER GUIDE (DEEP DIVE) ---
+        function renderGuides(list) {
+            const container = document.getElementById('guide-list-container');
+            container.innerHTML = list.map(g => `
+                <div class="cream-card rounded-2xl p-4 space-y-2.5 transition hover:shadow-md">
+                    <div class="flex justify-between items-start">
+                        <span class="bg-cream-100 text-cream-900 text-[10px] px-2.5 py-0.5 rounded-md font-bold">${g.cat}</span>
+                        <span class="text-[11px] text-terracotta font-bold"><i class="fa-solid fa-location-dot mr-1"></i>${g.city}</span>
+                    </div>
+                    <h3 class="text-sm font-bold text-cream-900 leading-snug">${g.title}</h3>
+                    <p class="text-xs text-cream-800 leading-relaxed">${g.intro}</p>
+                    <div class="bg-[#FDFBF7] rounded-xl p-2.5 border border-cream-200 text-xs">
+                        <div class="font-bold text-amber-700 mb-0.5 flex items-center">
+                            <i class="fa-solid fa-lightbulb mr-1.5"></i> 深度冷知識
+                        </div>
+                        <div class="text-cream-900 leading-relaxed text-[11px]">${g.trivia}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterGuides(query) {
+            const q = query.toLowerCase();
+            const filtered = guidesData.filter(g => 
+                g.title.toLowerCase().includes(q) || 
+                g.city.toLowerCase().includes(q) || 
+                g.cat.toLowerCase().includes(q) ||
+                g.intro.toLowerCase().includes(q)
+            );
+            renderGuides(filtered);
+        }
+
+        // --- RENDER TRANSPORT ---
+        function renderTransportTimeline() {
+            const container = document.getElementById('transport-timeline-container');
+            container.innerHTML = transportData.map((t, idx) => `
+                <div class="cream-card rounded-2xl p-3.5 flex items-start space-x-3">
+                    <div class="bg-terracotta/10 text-terracotta w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                        ${idx + 1}
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-[10px] bg-cream-200 text-cream-900 px-2 py-0.5 rounded font-bold">${t.date}</span>
+                            <span class="text-[10px] text-olive font-bold">${t.duration}</span>
+                        </div>
+                        <h4 class="text-xs font-bold text-cream-900 mb-0.5">${t.route}</h4>
+                        <div class="text-[11px] text-terracotta font-medium mb-1">${t.type}</div>
+                        <p class="text-[11px] text-cream-800 leading-relaxed">${t.details}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // --- RENDER CHECKLIST WITH LOCALSTORAGE ---
+        function renderChecklist() {
+            const container = document.getElementById('checklist-container');
+            const savedState = JSON.parse(localStorage.getItem('italia_checklist') || '{}');
+
+            container.innerHTML = checklistData.map((group, gIdx) => {
+                const itemsHtml = group.items.map((item, iIdx) => {
+                    const key = `g_${gIdx}_i_${iIdx}`;
+                    const isChecked = savedState[key] ? 'checked' : '';
+                    return `
+                        <label class="flex items-center space-x-3 p-2.5 bg-white rounded-xl border border-cream-200 cursor-pointer hover:bg-cream-50 transition">
+                            <input type="checkbox" ${isChecked} onchange="toggleCheck('${key}', this.checked)" class="w-4 h-4 text-terracotta rounded border-cream-300 focus:ring-terracotta">
+                            <span class="text-xs text-cream-900 font-medium ${isChecked ? 'line-through opacity-50' : ''}">${item}</span>
+                        </label>
+                    `;
+                }).join('');
+
+                return `
+                    <div class="cream-card rounded-2xl p-4 space-y-2.5">
+                        <h3 class="text-xs font-bold text-cream-900 uppercase tracking-wider flex items-center">
+                            <i class="fa-solid fa-check-to-slot text-terracotta mr-2"></i> ${group.category}
+                        </h3>
+                        <div class="space-y-1.5">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleCheck(key, status) {
+            const savedState = JSON.parse(localStorage.getItem('italia_checklist') || '{}');
+            savedState[key] = status;
+            localStorage.setItem('italia_checklist', JSON.stringify(savedState));
+            renderChecklist();
+        }
+
+        function resetChecklist() {
+            if (confirm("確定要重設所有勾選狀態嗎？")) {
+                localStorage.removeItem('italia_checklist');
+                renderChecklist();
+            }
+        }
+    </script>
+</body>
+</html>
